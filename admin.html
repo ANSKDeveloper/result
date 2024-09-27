@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .Father {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .Son {
+            width: 300px;
+            padding: 30px;
+            background-color: rgb(124, 147, 221);
+        }
+        
+        input,
+        button {
+            margin-top: 5px;
+            width: 100%;
+            font-size: 20px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="Father">
+        <div class="Son">
+            <form action="insert.php" method="post">
+                <h2>Admin Portal</h2>
+                <input type="text" placeholder="Enter Class" name="cls">
+                <input type="text" placeholder="Enter Semester" name="sem">
+                <input type="text" placeholder="Enter RollNo" name="result">
+                <input type="text" placeholder="Enter Result" name="marks">
+                <button type="submit" name="chk">Insert Data</button>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
